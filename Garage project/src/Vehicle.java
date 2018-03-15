@@ -1,5 +1,11 @@
+import java.util.ArrayList;
 
-public class Vehicle {
+public abstract class Vehicle {
+	
+    public int price;
+    public String type;
+    public String colour;
+    
 	
  public void moves () {
 	 System.out.println("A vehicle moves");
@@ -9,5 +15,12 @@ public class Vehicle {
  }
  public void reverse () {
 	 System.out.println("A vehicle reverses");
+	 
+	 ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
+	 
+	 
+//	 Vehicle list = new Arraylist();
+//	 list.add("h");
  }
+ 
 }

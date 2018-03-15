@@ -1,15 +1,16 @@
+import java.util.ArrayList;
 
 public class Person {
 	
 	//Fields/Attributes - describes object
-	public int age;
+	private int age;
 	public String name;
 	public String Jobtitle; 
 	
 	//Constructor - a state of object
 public Person(int age, String name, String Jobtitle) {
 	//super();
-	this.age = age;
+	this.setAge(age);
 	this.name = name;
 	this.Jobtitle = Jobtitle;
 }
@@ -19,7 +20,14 @@ public void startwork() {
 }
 
 public String toString() {
-	return "Workers:" +" "+ age +" "+ name +" "+ Jobtitle;
-	
+	return "Workers:" +" "+ getAge() +" "+ name +" "+ Jobtitle;
+
 }
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+
 }
