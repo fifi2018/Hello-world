@@ -6,5 +6,5 @@ public class Garage {
 	
 	 ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
 	 
-	 vehicleList.add
+	 //vehicleList.add
 }}
